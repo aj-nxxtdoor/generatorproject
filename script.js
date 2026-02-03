@@ -112,7 +112,7 @@ function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-/**
+/** 
  * Calculates the day of the week using the given formula
  * Formula: d = ((CC/4 - 2*CC - 1) + (5*YY/4) + (26*(MM+1)/10) + DD) mod 7
  * @param {number} day - Day of birth
@@ -121,7 +121,7 @@ function isLeapYear(year) {
  * @returns {number} - Day of week (0-6, where 0 is Sunday)
  */
 function calculateDayOfWeek(day, month, year) {
-    // Extract century and year
+    // excatract century and Year
     const CC = Math.floor(year / 100);
     const YY = year % 100;
     const MM = month;

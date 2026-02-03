@@ -57,6 +57,7 @@ function validateInputs(day, month, year, gender) {
         alert('Please fill in all fields including gender selection.');
         return false;
     }
+    //validate day
     if (day < 1 || day > 31) {
         alert('Invalid day! Please enter a day between 1 and 31.');
         return false;

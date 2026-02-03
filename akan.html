@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAN NAME GENERATOR</title>
+</head>
+<body>
+     <div class="container">
+        <header>
+            <h1>Akan Name Generator</h1>
+            <p class="description">
+                Discover your Akan name! In Ghanaian culture, children are named based on the day of the week they were born. 
+                Enter your birthdate and gender below to find out your Akan name.
+            </p>
+        </header>
+
+        <main>
+            <form id="akanForm" class="akan-form">
+                <div class="form-group">
+                    <label for="day">Day of Birth:</label>
+                    <input 
+                        type="number" 
+                        id="day" 
+                        name="day" 
+                        placeholder="DD (1-31)" 
+                        min="1" 
+                        max="31" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="month">Month of Birth:</label>
+                    <input 
+                        type="number" 
+                        id="month" 
+                        name="month" 
+                        placeholder="MM (1-12)" 
+                        min="1" 
+                        max="12" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year of Birth:</label>
+                    <input 
+                        type="number" 
+                        id="year" 
+                        name="year" 
+                        placeholder="YYYY" 
+                        min="1900" 
+                        max="2024" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female" required>
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Find My Akan Name</button>
+            </form>
+
+            <div id="result" class="result hidden">
+                <h2>Your Akan Name Is:</h2>
+                <p class="akan-name" id="akanName"></p>
+                <p class="day-info" id="dayInfo"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="akan-table">
+                <h3>Akan Names Reference</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Male Name</th>
+                            <th>Female Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Kwasi</td>
+                            <td>Akosua</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Kwadwo</td>
+                            <td>Adwoa</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Kwabena</td>
+                            <td>Abenaa</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Kwaku</td>
+                            <td>Akua</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Yaw</td>
+                            <td>Yaa</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Kofi</td>
+                            <td>Afua</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Kwame</td>
+                            <td>Ama</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

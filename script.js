@@ -30,7 +30,7 @@ function calculateAkanName() {
         return;
     }
 
-    // Calculate day of week
+    // calculate day of week
     const dayOfWeek = calculateDayOfWeek(day, month, year);
 
     // Get Akan name based on gender

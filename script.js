@@ -25,7 +25,7 @@ function calculateAkanName() {
     const year = parseInt(document.getElementById('year').value);
     const gender = document.querySelector('input[name="gender"]:checked');
 
-    // Validate inputs
+    // Validates inputs
     if (!validateInputs(day, month, year, gender)) {
         return;
     }

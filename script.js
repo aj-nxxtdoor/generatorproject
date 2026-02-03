@@ -3,7 +3,7 @@ const maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'
 const femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// Get form and result elements
+// get from and results elements
 const form = document.getElementById('akanForm');
 const resultDiv = document.getElementById('result');
 const akanNameElement = document.getElementById('akanName');

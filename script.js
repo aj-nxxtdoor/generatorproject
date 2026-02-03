@@ -74,8 +74,7 @@ function validateInputs(day, month, year, gender) {
         alert('Invalid date! The day you entered does not exist in the selected month.');
         return false;
     }
-
-    // Validate year (reasonable range)
+    // validate year at reasonable range
     if (year < 1900 || year > new Date().getFullYear()) {
         alert(`Invalid year! Please enter a year between 1900 and ${new Date().getFullYear()}.`);
         return false;
